@@ -3,5 +3,8 @@ classDiagram
     class StateGen {
 
     }  
-    class 
+    class GameState {
+
+    }
+    class Field
 ```
