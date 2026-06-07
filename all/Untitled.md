@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
-    enum Type {
-
+     {
+        
     }
     class StateGen {
         + bool[][] typeChart
