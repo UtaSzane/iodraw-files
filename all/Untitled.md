@@ -2,7 +2,8 @@
 classDiagram
     class StateGen {
         + bool[][] typeChart
-        + List<Typing, Stats> 
+        + List<Typing, Stats> pokeDatas
+        + List()
     }  
     class GameState {
 
