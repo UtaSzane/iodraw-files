@@ -1,4 +1,7 @@
 ```mermaid
 classDiagram
-    class Stag  
+    class StateGen {
+
+    }  
+    class 
 ```
