@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
     class Stats {
-        int hp
+        + int hide empty description
     }
     class StateGen {
         + bool[][] typeChart
