@@ -1,6 +1,6 @@
 ```mermaid
 classDiagram
-    class enum Type {
+    enum Type {
 
     }
     class StateGen {
