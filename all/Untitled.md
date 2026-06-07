@@ -9,5 +9,7 @@ classDiagram
     class Field {
 
     }
-    class 
+    class Side {
+        
+    }
 ```
