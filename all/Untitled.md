@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
     class StateGen {
-        + int[][] TypeGen
+        + bool[][] Ty
     }  
     class GameState {
 
