@@ -2,7 +2,7 @@
 classDiagram
     class StateGen {
         + bool[][] typeChart
-        + List<
+        + List<Typing, Stats> 
     }  
     class GameState {
 
