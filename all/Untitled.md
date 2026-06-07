@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
     class StateGen {
-
+        + 
     }  
     class GameState {
 
@@ -15,5 +15,7 @@ classDiagram
     class Slot {
 
     }
-    class Poke
+    class PokeData {
+
+    }
 ```
