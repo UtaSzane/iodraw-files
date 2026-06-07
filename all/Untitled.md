@@ -1,9 +1,10 @@
 ```mermaid
 classDiagram
+    enum 
     class StateGen {
         + bool[][] typeChart
         + Types[] pokeDatas_Typing
-        + Stats[] pokeDatas
+        + Stats[] pokeDatas_Stats
         + List[]
     }  
     class GameState {
