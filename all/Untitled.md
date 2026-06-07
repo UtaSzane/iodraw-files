@@ -3,7 +3,9 @@ classDiagram
     class Stats {
         + int hp
         + int atk
-        + int
+        + int def
+        + int spa
+        
     }
     class StateGen {
         + bool[][] typeChart
