@@ -1,32 +1,26 @@
 ```mermaid
-classDiagram
-    class Stats {
-        + int hp
-        + int atk
-        + int def
-        + int spa
-        + int spd
-        + int spe
+zenuml
+    title Order Service
+    @Actor Client #FFEBE6
+    @Boundary OrderController #0747A6
+    @EC2 <<BFF>> OrderService #E3FCEF
+    group BusinessService {
+      @Lambda PurchaseService
+      @AzureFunction InvoiceService
     }
-    class StateGen {
-        + bool[][] typeChart
-        + Types[] pokeDatas_Typing
-        + Stats[] pokeDatas_Stats
-        + List[]
-    }  
-    class GameState {
 
-    }
-    class Field {
-
-    }
-    class Side {
-
-    }
-    class Slot {
-
-    }
-    class PokeData {
-
-    }
+    @Starter(Client)
+    // `POST /orders`
+    OrderController.post(payload) {
+      OrderService.create(payload) {
+        order = new Order(payload)
+        if(order != null) {
+          par {
+            PurchaseService.createPO(order)
+            InvoiceService.createInvoice(order)      
+          }      
+        }
+      }
+    }		
+	  
 ```
