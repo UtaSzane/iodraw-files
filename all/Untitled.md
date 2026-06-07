@@ -1,26 +1,8 @@
 ```mermaid
-zenuml
-    title Order Service
-    @Actor Client #FFEBE6
-    @Boundary OrderController #0747A6
-    @EC2 <<BFF>> OrderService #E3FCEF
-    group BusinessService {
-      @Lambda PurchaseService
-      @AzureFunction InvoiceService
-    }
-
-    @Starter(Client)
-    // `POST /orders`
-    OrderController.post(payload) {
-      OrderService.create(payload) {
-        order = new Order(payload)
-        if(order != null) {
-          par {
-            PurchaseService.createPO(order)
-            InvoiceService.createInvoice(order)      
-          }      
-        }
-      }
-    }		
-	  
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+            
 ```
