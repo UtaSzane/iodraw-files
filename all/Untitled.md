@@ -1,6 +1,8 @@
 ```mermaid
 classDiagram
-class
+    class Stats {
+        int hp
+    }
     class StateGen {
         + bool[][] typeChart
         + Types[] pokeDatas_Typing
