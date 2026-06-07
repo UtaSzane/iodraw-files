@@ -1,6 +1,8 @@
 ```mermaid
 classDiagram
-    enum 
+    class enum Type {
+
+    }
     class StateGen {
         + bool[][] typeChart
         + Types[] pokeDatas_Typing
