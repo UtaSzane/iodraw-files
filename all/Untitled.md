@@ -10,6 +10,10 @@ classDiagram
 
     }
     class Side {
-        
+
     }
+    class Slot {
+
+    }
+    class Poke
 ```
