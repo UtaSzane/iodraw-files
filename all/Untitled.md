@@ -1,9 +1,7 @@
 ```mermaid
 classDiagram
     element Types {
-        element test_entity {
-            
-        }
+        NORMAL = 0,
     }
     class StateGen {
         + bool[][] typeChart
