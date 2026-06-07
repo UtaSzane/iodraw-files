@@ -1,8 +1,6 @@
 ```mermaid
 classDiagram
-    element Types {
-        NORMAL = 0,
-    }
+class
     class StateGen {
         + bool[][] typeChart
         + Types[] pokeDatas_Typing
