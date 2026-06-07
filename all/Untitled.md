@@ -1,7 +1,8 @@
 ```mermaid
 classDiagram
     class StateGen {
-        + bool[][] Ty
+        + bool[][] typeChart
+        + List<
     }  
     class GameState {
 
