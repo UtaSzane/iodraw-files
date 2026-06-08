@@ -18,5 +18,4 @@ classDiagram
       +bool is_wild
       +run()
     }
-            
 ```
