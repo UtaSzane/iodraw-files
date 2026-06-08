@@ -1,4 +1,6 @@
 ```mermaid
 classDiagram
-    class 
+    class Typing {
+        
+    }
 ```
